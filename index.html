@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мартин Миллер — full-stack разработчик и студент</title>
+  <meta name="description" content="Портфолио Мартина Миллера: full-stack проекты на Python, FastAPI, React, TypeScript и Vue. GitHub — MAKA-O.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f2efe6">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Мартин Миллер — full-stack разработчик и студент">
+  <meta property="og:description" content="Full-stack проекты на Python, FastAPI, React, TypeScript и Vue. Портфолио и GitHub.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f35e0'/%3E%3Cpath d='M32 12v40M12 32h40M18 18l28 28M46 18L18 46' stroke='%23f7f4ea' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/avatar.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93 4.93 19.07" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 4v16m0 0 6-6m-6 6-6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m4 12.5 5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 20V4m0 0L6 10m6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Мартин Миллер — на главную">
+        <svg class="brand-mark" aria-hidden="true"><use href="#i-star"/></svg>
+        <span class="brand-name">Мартин <em>Миллер</em></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span class="menu-toggle__text">
+          <span class="menu-toggle__closed">Меню</span>
+          <span class="menu-toggle__open">Закрыть</span>
+        </span>
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#about"><span class="nav-num">01</span>О себе</a></li>
+          <li><a href="#skills"><span class="nav-num">02</span>Навыки</a></li>
+          <li><a href="#projects"><span class="nav-num">03</span>Проекты</a></li>
+          <li><a href="#contact"><span class="nav-num">04</span>Контакт</a></li>
+        </ul>
+        <div class="nav-meta">
+          <a href="mailto:mrmmvo@gmail.com">mrmmvo@gmail.com</a>
+          <a href="https://github.com/MAKA-O" target="_blank" rel="noopener noreferrer">github.com/MAKA-O</a>
+        </div>
+      </nav>
+
+      <a class="header-cta" href="#contact">
+        Связаться
+        <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+    </div>
+  </header>
+  <div class="menu-scrim" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-meta">
+          <span class="eyebrow"><svg class="spin-mark" aria-hidden="true"><use href="#i-star"/></svg> Портфолио — 2026</span>
+          <span class="hero-meta__right">IT-студент · full-stack</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title" id="hero-title">
+              <span class="hero-title__line">Мартин</span>
+              <span class="hero-title__line hero-title__line--italic">Миллер<svg class="hero-title__mark" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </h1>
+            <p class="hero-lead">Собираю full-stack продукты целиком — от интерфейса до API.</p>
+            <p class="hero-text">IT-студент, группа ПИ24-1.3р. Пишу на Python и TypeScript, делаю проекты на React и Vue и разбираюсь, как всё устроено внутри.</p>
+            <div class="hero-actions">
+              <a class="btn btn--primary" href="#projects">
+                Смотреть проекты
+                <svg aria-hidden="true"><use href="#i-arrow-down"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/MAKA-O" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#i-github"/></svg>
+                GitHub
+                <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </div>
+            <div class="hero-foot">
+              <span><span class="status-dot" aria-hidden="true"></span>GitHub с октября 2024</span>
+              <span>6 публичных репозиториев</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <figure class="portrait">
+              <div class="portrait-offset" aria-hidden="true"></div>
+              <div class="portrait-frame">
+                <div class="portrait-img">
+                  <img src="assets/avatar.jpg" width="512" height="512" alt="Иллюстрированный аватар Мартина Миллера: синий орк с двумя банками пива" fetchpriority="high" decoding="async">
+                </div>
+                <figcaption>
+                  <span>Мартин Миллер</span>
+                  <span>IT-студент · 2026</span>
+                </figcaption>
+              </div>
+            </figure>
+            <div class="stamp" aria-hidden="true">
+              <svg viewBox="0 0 140 140">
+                <defs>
+                  <path id="stamp-path" d="M70,70 m-51,0 a51,51 0 1,1 102,0 a51,51 0 1,1 -102,0"/>
+                </defs>
+                <circle cx="70" cy="70" r="68" class="stamp-ring"/>
+                <g class="stamp-rotor">
+                  <text class="stamp-text">
+                    <textPath href="#stamp-path">FULL-STACK · PYTHON · REACT · VUE ·</textPath>
+                  </text>
+                </g>
+                <use href="#i-star" x="56" y="56" width="28" height="28" class="stamp-star"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Python</span><svg><use href="#i-star"/></svg>
+          <span>FastAPI</span><svg><use href="#i-star"/></svg>
+          <span>React</span><svg><use href="#i-star"/></svg>
+          <span>TypeScript</span><svg><use href="#i-star"/></svg>
+          <span>Vue 3</span><svg><use href="#i-star"/></svg>
+          <span>SQLite</span><svg><use href="#i-star"/></svg>
+          <span>JWT</span><svg><use href="#i-star"/></svg>
+          <span>SSE</span><svg><use href="#i-star"/></svg>
+          <span>SCSS</span><svg><use href="#i-star"/></svg>
+          <span>Vite</span><svg><use href="#i-star"/></svg>
+          <span>Gulp</span><svg><use href="#i-star"/></svg>
+          <span>Git</span><svg><use href="#i-star"/></svg>
+        </div>
+        <div class="marquee-group">
+          <span>Python</span><svg><use href="#i-star"/></svg>
+          <span>FastAPI</span><svg><use href="#i-star"/></svg>
+          <span>React</span><svg><use href="#i-star"/></svg>
+          <span>TypeScript</span><svg><use href="#i-star"/></svg>
+          <span>Vue 3</span><svg><use href="#i-star"/></svg>
+          <span>SQLite</span><svg><use href="#i-star"/></svg>
+          <span>JWT</span><svg><use href="#i-star"/></svg>
+          <span>SSE</span><svg><use href="#i-star"/></svg>
+          <span>SCSS</span><svg><use href="#i-star"/></svg>
+          <span>Vite</span><svg><use href="#i-star"/></svg>
+          <span>Gulp</span><svg><use href="#i-star"/></svg>
+          <span>Git</span><svg><use href="#i-star"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <section class="stats" aria-label="Ключевые цифры">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-value">6</span>
+            <span class="stat-label">публичных репозиториев</span>
+            <span class="stat-note">GitHub · MAKA-O</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">4</span>
+            <span class="stat-label">проекта в портфолио</span>
+            <span class="stat-note">каждый можно открыть</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value stat-value--word">Full-stack</span>
+            <span class="stat-label">направление</span>
+            <span class="stat-note">от интерфейса до API</span>
+          </div>
+        </div>
+        <div class="stats-foot">
+          <span>Аккаунт GitHub создан в октябре 2024 года</span>
+          <span>2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">01 / О себе</span>
+          <h2 id="about-title">От схемы данных <em>до интерфейса.</em></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-statement reveal">
+            <p class="about-quote">Мне интересен полный цикл — <em>и логика, и то, как её видит человек.</em></p>
+            <dl class="facts">
+              <div>
+                <dt>Учёба</dt>
+                <dd>IT-студент, группа ПИ24-1.3р</dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd>с октября 2024</dd>
+              </div>
+              <div>
+                <dt>Фокус</dt>
+                <dd>Full-stack и AI-интеграции</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="about-copy reveal delay-1">
+            <p>Я IT-студент, учусь в группе ПИ24-1.3р. Мне нравится полный цикл: продумать структуру, собрать API и сделать интерфейс, которым удобно пользоваться.</p>
+            <p>На бэкенде работаю с Python и FastAPI, на фронтенде — с React, TypeScript и Vue. В HH7d есть AI-слой с двумя движками оценки: Live и Offline fallback.</p>
+            <p>Сейчас мне интереснее всего интеграция AI в продукты и то, как Python работает вместе с интерфейсом. Учусь на собственных проектах: собираю, проверяю, переписываю.</p>
+            <a class="text-link" href="#skills">Что я использую <svg aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">02 / Навыки</span>
+          <h2 id="skills-title">Стек из реальных <em>проектов.</em></h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <div class="skill-head">
+              <span class="skill-num">01</span>
+              <h3>Frontend</h3>
+              <span class="skill-count">06</span>
+            </div>
+            <ul class="skill-list">
+              <li><span>React</span></li>
+              <li><span>TypeScript</span></li>
+              <li><span>JavaScript</span></li>
+              <li><span>Vue 3</span></li>
+              <li><span>HTML</span></li>
+              <li><span>SCSS / CSS</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal delay-1">
+            <div class="skill-head">
+              <span class="skill-num">02</span>
+              <h3>Backend</h3>
+              <span class="skill-count">06</span>
+            </div>
+            <ul class="skill-list">
+              <li><span>Python</span></li>
+              <li><span>FastAPI</span></li>
+              <li><span>SQLite</span></li>
+              <li><span>JWT</span></li>
+              <li><span>SSE</span></li>
+              <li><span>AI-интеграция</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal delay-2">
+            <div class="skill-head">
+              <span class="skill-num">03</span>
+              <h3>Tools</h3>
+              <span class="skill-count">04</span>
+            </div>
+            <ul class="skill-list">
+              <li><span>Git</span></li>
+              <li><span>GitHub</span></li>
+              <li><span>Vite</span></li>
+              <li><span>Gulp</span></li>
+            </ul>
+          </article>
+        </div>
+        <p class="skills-note reveal">Список собран из проектов ниже — ничего для галочки.</p>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">03 / Проекты</span>
+          <h2 id="projects-title">Проекты, которые <em>можно открыть.</em></h2>
+        </header>
+
+        <article class="project-featured reveal">
+          <div class="project-media project-media--featured">
+            <div class="cover cover--hh7d" aria-hidden="true">
+              <span class="cover-tag cover-tag--tl">Interview / Trainer</span>
+              <span class="cover-tag cover-tag--tr">01</span>
+              <div class="hh-radar">
+                <svg viewBox="0 0 500 500">
+                  <g fill="none" stroke="rgba(247,244,234,.22)" stroke-width="1">
+                    <circle cx="250" cy="250" r="210"/>
+                    <circle cx="250" cy="250" r="150"/>
+                    <circle cx="250" cy="250" r="90"/>
+                    <circle cx="250" cy="250" r="30"/>
+                    <path d="M250 20v460M20 250h460"/>
+                  </g>
+                  <g class="hh-sweep" fill="none" stroke="#8e9bff" stroke-width="1.4">
+                    <path d="M250 250 250 40"/>
+                    <circle cx="250" cy="40" r="4" fill="#8e9bff" stroke="none"/>
+                  </g>
+                  <circle cx="250" cy="250" r="5" fill="#8e9bff"/>
+                  <circle cx="352" cy="168" r="3.5" fill="#f7f4ea" opacity=".7"/>
+                  <circle cx="166" cy="330" r="3.5" fill="#f7f4ea" opacity=".7"/>
+                  <circle cx="310" cy="352" r="2.5" fill="#f7f4ea" opacity=".45"/>
+                </svg>
+              </div>
+              <span class="hh-chip hh-chip--live"><span></span>LIVE</span>
+              <span class="hh-chip hh-chip--offline">OFFLINE</span>
+              <div class="hh-chat"><span></span><span></span><span></span></div>
+              <span class="cover-caption">AI evaluation · SSE chat</span>
+            </div>
+            <span class="project-media__label">Fig. 01 — HH7d</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-kicker">
+              <span>Избранный проект</span>
+              <span>Full-stack · SPA</span>
+            </div>
+            <h3 class="project-title">HH7d</h3>
+            <p class="project-tagline">Интеллектуальный тренажёр для подготовки к собеседованиям.</p>
+            <p class="project-desc">Тренажёр, в котором можно отвечать на вопросы в чате и получать оценку от AI-слоя. Внутри — FastAPI и React SPA, SQLite, JWT-авторизация, SSE для чата, задачи на code-review и аналитика прогресса. Если внешний AI недоступен, подключается Offline-движок.</p>
+            <ul class="feature-list">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>AI-оценка ответов: Live и Offline fallback</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Чат на SSE и JWT-авторизация</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Code-review и аналитика прогресса</li>
+            </ul>
+            <ul class="tags">
+              <li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>SQLite</li><li>JWT</li><li>SSE</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn--accent" href="https://github.com/MAKA-O/HH7d" target="_blank" rel="noopener noreferrer">
+                Открыть репозиторий
+                <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+              <span class="project-links__note">github.com/MAKA-O/HH7d</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              <div class="cover cover--sit" aria-hidden="true">
+                <span class="cover-tag cover-tag--tl">Multipage / Gulp</span>
+                <span class="cover-tag cover-tag--tr">02</span>
+                <div class="sit-stack">
+                  <div class="sit-page sit-page--back"></div>
+                  <div class="sit-page sit-page--mid"></div>
+                  <div class="sit-browser">
+                    <div class="sit-browser__bar"><i></i><i></i><i></i><span>maka-o.github.io/sit</span></div>
+                    <div class="sit-browser__view">
+                      <div class="sit-nav"><span class="sit-logo"></span><span></span><span></span><span></span></div>
+                      <div class="sit-hero"><span class="sit-title"></span><span class="sit-sub"></span><span class="sit-btn"></span></div>
+                      <div class="sit-cols"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="cover-caption">HTML · SCSS · Gulp</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>02 / Сайт</span><span>Демо</span></div>
+              <h3>sit</h3>
+              <p>Многостраничный сайт на Gulp и SCSS: несколько страниц, общая сборка и живая демо-версия.</p>
+              <ul class="tags"><li>HTML</li><li>SCSS</li><li>Gulp</li><li>JavaScript</li></ul>
+              <div class="project-card__links">
+                <a class="text-link" href="https://github.com/MAKA-O/sit" target="_blank" rel="noopener noreferrer">Репозиторий <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                <a class="text-link text-link--accent" href="https://maka-o.github.io/sit/index.html" target="_blank" rel="noopener noreferrer">Демо <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-card__media">
+              <div class="cover cover--bl2" aria-hidden="true">
+                <span class="cover-tag cover-tag--tl">Vue 3 / Vite</span>
+                <span class="cover-tag cover-tag--tr">03</span>
+                <svg class="bl-key" viewBox="0 0 120 120">
+                  <circle cx="42" cy="42" r="22" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="42" cy="42" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <path d="M58 58 98 98M82 82l10-10M92 92l10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="bl-field">
+                  <span class="bl-field__label">Password</span>
+                  <span class="bl-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  <svg class="bl-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </div>
+                <span class="cover-caption">Generate · Copy · Repeat</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>03 / Инструмент</span><span>Vue 3</span></div>
+              <h3>bl2</h3>
+              <p>Генератор паролей с интерфейсом на Vue 3 и сборкой на Vite.</p>
+              <ul class="tags"><li>Vue 3</li><li>Vite</li><li>JavaScript</li></ul>
+              <div class="project-card__links">
+                <a class="text-link" href="https://github.com/MAKA-O/bl2" target="_blank" rel="noopener noreferrer">Репозиторий <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-card__media">
+              <div class="cover cover--vue1" aria-hidden="true">
+                <span class="cover-tag cover-tag--tl">Study / Vue</span>
+                <span class="cover-tag cover-tag--tr">04</span>
+                <div class="vue-orbit"></div>
+                <div class="vue-chevrons">
+                  <span class="chev chev--1"></span>
+                  <span class="chev chev--2"></span>
+                  <span class="chev chev--3"></span>
+                </div>
+                <span class="vue-note">ПИ24-1.3р · вместе с Ансаром Насибулиным</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>04 / Учебный</span><span>Vue</span></div>
+              <h3>VUE1</h3>
+              <p>Учебный Vue-проект, сделанный вместе с Ансаром Насибулиным в группе ПИ24-1.3р.</p>
+              <ul class="tags"><li>Vue</li><li>JavaScript</li></ul>
+              <div class="project-card__links">
+                <a class="text-link" href="https://github.com/MAKA-O/VUE1" target="_blank" rel="noopener noreferrer">Репозиторий <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-star" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+      </div>
+      <div class="container contact-inner">
+        <span class="section-index section-index--light">04 / Контакт</span>
+        <h2 id="contact-title">Давайте <em>соберём</em> <span class="nowrap">что-нибудь.</span></h2>
+        <p class="contact-text">Проект, учебная задача или разговор о коде — пишите на почту. Профиль на GitHub тоже открыт.</p>
+        <a class="contact-mail" href="mailto:mrmmvo@gmail.com">
+          <span>mrmmvo@gmail.com</span>
+          <span class="contact-mail__icon"><svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+        </a>
+        <div class="contact-links">
+          <a class="btn btn--light" href="https://github.com/MAKA-O" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#i-github"/></svg>
+            github.com/MAKA-O
+            <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <span class="contact-note">Почта — самый надёжный способ связи</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand brand--footer" href="#top" aria-label="Мартин Миллер — наверх">
+        <svg class="brand-mark" aria-hidden="true"><use href="#i-star"/></svg>
+        <span class="brand-name">Мартин <em>Миллер</em></span>
+      </a>
+      <p class="footer-copy">© <span id="year">2026</span> Мартин Миллер</p>
+      <p class="footer-note">HTML · CSS · немного JavaScript</p>
+      <a class="footer-top" href="#top">Наверх <svg aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
